@@ -1,0 +1,14 @@
+<div class="form">
+     <h1 style="text-align: center;">Todo List App</h1>
+     <div class="box">
+     <input [(ngModel)]="task" type="text" placeholder="Enter task">
+     <button (click)="addTask()" class="add">Add task</button>
+     
+
+<ul *ngFor="let item of tasks">
+ <li>{{item.task}}
+
+ <button (click)="deleteTask(item)" class="del">X</button></li>
+</ul>
+</div>
+ </div>

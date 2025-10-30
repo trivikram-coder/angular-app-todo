@@ -1,0 +1,116 @@
+/* ===== Body ===== */
+body {
+    background-color: rgb(185, 183, 183);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* ===== Form Container ===== */
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ===== Heading ===== */
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ===== Box Container ===== */
+.box {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* ===== Input Field ===== */
+.box input {
+    padding: 10px;
+    width: calc(100% - 24px); /* full width minus padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.box input::placeholder {
+    color: #888;
+}
+
+/* ===== Add Button ===== */
+.add {
+    background-color: rgb(65, 65, 237);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.add:hover {
+    background-color: rgb(97, 94, 232);
+}
+
+/* ===== Todo List ===== */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ===== Delete Button ===== */
+.del {
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.del:hover {
+    background-color: rgb(246, 85, 85);
+}
+.update {
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.update:hover {
+    background-color: rgb(62, 248, 62);
+}
